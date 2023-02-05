@@ -1,0 +1,326 @@
+@import "utilities.css";
+
+:root {
+  --primary: #3dcfd3;
+  --dark: #161616;
+  --pure: #ffffff;
+  --ternary: #898989;
+  --light: #f2f2f2;
+  --orange: #fd580b;
+  --black: #070606;
+  --light-black: #454545;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+header {
+  background-color: black;
+  height: 850px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 90%, 0 100%);
+}
+header nav .left a {
+  color: var(--pure);
+  text-decoration: none;
+  margin-right: 2 rem;
+}
+header nav {
+  position: relative;
+  top: 20px;
+}
+header nav .logo {
+  margin-right: 3rem;
+}
+.logo {
+  display: flex;
+  height: 100px;
+}
+header nav .links a {
+  margin-right: 3rem;
+}
+header nav .links a:hover {
+  color: var(--orange);
+  transition: all 0.3s ease;
+}
+.container {
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.pc-guy .left img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 450px;
+  width: 650px;
+  position: relative;
+  top: 50px;
+}
+.pc-guy .right {
+  color: white;
+}
+.pc-guy .right h2 {
+  color: var(--orange);
+  margin-bottom: 0.3rem;
+  margin-top: 20px;
+}
+.pc-guy .right h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.pc-guy .right span {
+  color: var(--orange);
+}
+.pc-guy .right p {
+  line-height: 1.9;
+  margin-bottom: 6rem;
+}
+.git img {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  right: 415px;
+}
+.linkedin img {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 2px;
+  right: 450px;
+}
+.projects img {
+  height: 18px;
+  width: 18px;
+  position: relative;
+  top: 2px;
+  right: 498px;
+}
+.section {
+  padding: 6rem 0;
+}
+.intro {
+  height: 280px;
+  width: 535px;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  background-image: url(/img/images-for-portfolio/images/a3.jpg);
+  background-size: cover;
+  position: relative;
+  top: 30px;
+  border-radius: 2%;
+}
+.intro h1 span {
+  color: var(--orange);
+}
+section.about p {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5rem;
+}
+.section-heading {
+  color: var(--black);
+  position: relative;
+  left: 540px;
+  top: 50px;
+}
+.section-heading span {
+  color: var(--orange);
+}
+.section-heading + p {
+  color: var(--ternary);
+  font-family: "Lato", sans-serif;
+  margin-bottom: 1 rem;
+}
+.skills {
+  background: var(--light);
+  position: relative;
+  top: 100px;
+  height: 700px;
+}
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  left: 20px;
+  top: 120px;
+  grid-column-gap: 2rem;
+  grid-row-gap: 4rem;
+}
+.card {
+  background: var(--pure);
+  padding: 3rem 2rem;
+  position: relative;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+.card img {
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.pbi {
+  height: 45px;
+  width: 45px;
+}
+.web-dev {
+  height: 45px;
+  width: 40px;
+}
+.card h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.card p {
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+  color: var(--light-black);
+}
+.card:hover {
+  background: var(--dark);
+}
+.card:hover h2 {
+  color: var(--pure);
+}
+.card:hover p {
+  color: var(--pure);
+}
+.work {
+  background: var(--light);
+  position: relative;
+  top: 150px;
+  height: 850px;
+}
+.card-2 {
+  height: 300px;
+  background: var(--pure);
+  padding: 1rem 1rem;
+  position: relative;
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+  background: url(/img/images-for-portfolio/Projects/670557.jpg);
+  background-size: cover;
+}
+.card-2:hover .overlay {
+  opacity: 1;
+}
+.card-2 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(61, 207, 211, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+  color: var(--orange);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.card-2 .overlay a {
+  color: var(--black);
+  text-decoration: none;
+}
+.card-2 .overlay span {
+  text-decoration: underline;
+}
+.card-2 h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+.card-2 p {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 3;
+  color: var(--light);
+}
+.card-2:hover {
+  background: var(--black);
+}
+.card-2:hover h2 {
+  color: var(--pure);
+}
+.card-2:hover p {
+  color: var(--pure);
+}
+.card-2 img {
+  height: 70%;
+  width: 50%;
+  border-radius: 1%;
+}
+.card-wrapper-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  left: 20px;
+  top: 120px;
+  grid-column-gap: 1rem;
+  grid-row-gap: 3rem;
+}
+
+.section-heading-2 {
+  color: var(--black);
+  position: relative;
+  left: 520px;
+  top: 50px;
+}
+.section-heading-2 span {
+  color: var(--orange);
+}
+.section-heading-3 {
+  color: var(--black);
+  position: relative;
+  left: 520px;
+  top: 30px;
+}
+.section-heading-3 span {
+  color: var(--orange);
+}
+.card-wrapper-3 {
+  display: grid;
+  height: 70px;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  left: 20px;
+  top: 80px;
+  grid-column-gap: 1rem;
+  grid-row-gap: 3rem;
+}
+.card-3 {
+  height: 100px;
+  width: 300px;
+  background: var(--pure);
+  padding: 1rem 1rem;
+  position: relative;
+  left: 150px;
+  bottom: 50px;
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+  background: transparent;
+  background-size: cover;
+}
+.contact {
+  background: url(/img/images-for-portfolio/images/grad-2.jpg);
+  background-size: cover;
+  position: relative;
+  top: 250px;
+  height: 200px;
+}
+.card-3 h5,
+h6 {
+  color: #161616;
+}
